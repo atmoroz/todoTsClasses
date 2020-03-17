@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default class Navbar extends React.Component {
   render() {
@@ -10,10 +11,10 @@ export default class Navbar extends React.Component {
           </a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a href="/">Sass</a>
+              <Link to="/">To-do</Link>
             </li>
             <li>
-              <a href="/">TS</a>
+              <Link to="/about">About</Link>
             </li>
           </ul>
         </div>
